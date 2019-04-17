@@ -20,6 +20,12 @@ export class ApiService {
         })
     }
 
+    putQuestion(question) {
+        this.http.put(`http://10.211.55.3:50426/api/questions/${question.id}`, question).subscribe(res => {
+            console.log(res);
+        })
+    }
+
     selectQuestion(question){
         this.selectedQuestion.next(question);
     }
