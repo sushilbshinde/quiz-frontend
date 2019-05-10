@@ -20,12 +20,13 @@ import { HomeComponent } from './home.component';
 import { NavComponent } from './nav.component';
 import { QuizComponent } from './quiz.component';
 import { QuizzesComponent } from './quizzes.component';
+import { RegisterComponent } from './register.component';
 
 const routes = [
   { path: '', component: HomeComponent },
   { path: 'question', component: QuestionComponent },
   { path: 'question/:quizId', component: QuestionComponent },
-  { path: 'questions', component: QuestionsComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'quiz', component: QuizComponent }
 ] 
 
@@ -37,7 +38,8 @@ const routes = [
     HomeComponent, 
     NavComponent, 
     QuizComponent,
-    QuizzesComponent
+    QuizzesComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
