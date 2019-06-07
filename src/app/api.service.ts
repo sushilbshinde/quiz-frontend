@@ -21,6 +21,10 @@ export class ApiService {
         return this.http.get('http://10.211.55.3:50426/api/quizzes');
     }
 
+    getAllQuizzes() {
+        return this.http.get('http://10.211.55.3:50426/api/quizzes/all');
+    }
+
     postQuestion(question) {
         this.http.post('http://10.211.55.3:50426/api/questions', question).subscribe(res => {
             console.log(res);
